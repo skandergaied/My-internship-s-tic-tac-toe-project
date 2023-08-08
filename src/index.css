@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+*{
+  text-align: center;
+}
+.app{
+  margin: 300px;
+  padding: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background-color: #1b988f;
+}
+
+.gamebored{
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  border: solid 1px #111111;
+}
+.square{
+  width: 100px;
+  height: 100px;
+  border: solid 2px #bcccca;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.circle{
+  height:90px;
+  width:90px;
+  border-radius: 50%;
+  border: 15px solid #dfdfea;
+  box-sizing: border-box;
+}
+.cross {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  transform: rotate(45deg);
+}
+
+.cross:before,
+.cross:after {
+  content: "";
+  position: absolute;
+  background-color: #0e0a0a;
+}
+
+.cross:before {
+  width: 30%;
+  height: 100%;
+  top: 0;
+  left: 35%;
+}
+
+.cross:after {
+  width: 100%;
+  height: 30%;
+  top: 35%;
+  left: 0;
+}
+
+
+body {
+  background-color: #d3d0d0;
+  font-family: 'Indie Flower', cursive;
+}
+
+
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login {
+  padding: 40px;
+  max-width: 400px;
+  width: 100%;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.login h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+
+.login p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #555;
+  text-align: center;
+}
+
+
+.login form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.login input[type="text"]
+{
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  height: 50px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.login input[type="password"] {
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  height: 50px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.login button {
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1f3640;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.login button:hover {
+  background-color: #30585b;
+}
+
+
+.login input[type="text"],
+.login input[type="password"],
+.login button {
+  margin-bottom: 15px;
+}
+
+.game-button {
+  margin-right: 10px;
+}
+
+.app .game-button {
+  margin-bottom: 10px;
+}
+
+
+.login button[type="submit"] {
+  align-self: center;
+}
+
+
+
+
+button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.reset-button {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+
+.quit-button {
+  background-color: #f44336;
+  color: #fff;
+}
+
+
+.app button {
+  margin-bottom: 10px;
+}
+
+
+.score-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.score-container p {
+  font-size: 24px;
+  margin: 10px;
+  color: #fff;
+  background-color: #30585b;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.score-container p:first-child {
+  background-color: #3e9dc4;
+}
+
+.score-container p:last-child {
+  background-color: #d14044;
+}
+
+.logout-button {
+  background-color: #f44336;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #d32f2f;
+}
+
+/* Add this CSS to style your timer */
+.timer-container {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+
+
